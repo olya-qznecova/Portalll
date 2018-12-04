@@ -1,0 +1,236 @@
+@charset "UTF-8";
+.name {
+  font-size: 30.8px;
+  letter-spacing: 1.2px;
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Jura", sans-serif; }
+
+.name2 {
+  color: #626262;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 1.4px;
+  text-align: center;
+  margin-top: 15px;
+  font-family: "Jura", sans-serif; }
+
+.blocks {
+  margin-top: 150px; }
+
+.text-box {
+  margin-left: 40px;
+  width: 450px; }
+
+.cafe-name {
+  color: black;
+  font-weight: 700;
+  font-size: 23.8px;
+  font-family: "Jura", sans-serif;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 30px;
+  transition: 0.5s; }
+  .cafe-name:hover {
+    color: lightgray; }
+
+.text-box {
+  text-align: left; }
+  .text-box p {
+    color: #626262;
+    font-family: "Roboto Mono", monospace;
+    margin-bottom: 60px; }
+
+.know-more {
+  text-decoration: none;
+  color: cadetblue;
+  font-family: "Roboto Mono", monospace;
+  display: block;
+  transition: 0.5s; }
+  .know-more:hover {
+    font-weight: bold;
+    color: #3d3029;
+    transform: translateX(5px); }
+
+.helper {
+  display: flex;
+  justify-content: space-between; }
+
+.grid {
+  position: relative;
+  max-width: 1000px;
+  max-height: 360px;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 50px;
+  margin-bottom: 70px; }
+
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  min-width: 320px;
+  max-width: 400px;
+  max-height: 360px;
+  width: 48%;
+  text-align: right;
+  cursor: pointer; }
+
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%; }
+
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.15em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none; }
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0; }
+
+.grid figure h2 {
+  font-family: "Jura", sans-serif;
+  word-spacing: -0.15em;
+  font-weight: 300; }
+
+.grid figure h2 span {
+  font-weight: 800; }
+
+.grid figure h2,
+.grid figure p {
+  margin: 0; }
+
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+  margin-right: 30px;
+  font-family: "Roboto Mono", monospace; }
+
+figure.effect-zoe figcaption {
+  top: auto;
+  bottom: 0;
+  padding: 0.5em;
+  height: 1.7em;
+  background: #fff;
+  color: #3d3029;
+  opacity: 0.85;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0); }
+
+figure.effect-zoe h2 {
+  float: left; }
+
+figure.effect-zoe p.icon-links a {
+  color: #3d3029;
+  font-size: 1.8em; }
+
+figure.effect-zoe:hover p.icon-links a:hover,
+figure.effect-zoe:hover p.icon-links a:focus {
+  color: #252d31; }
+
+figure.effect-zoe p.description {
+  position: absolute;
+  bottom: 8.7em;
+  color: #fff;
+  text-transform: none;
+  font-size: 23.8px;
+  font-family: "Jura", sans-serif;
+  opacity: 0;
+  font-weight: bold;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+  -webkit-backface-visibility: hidden; }
+
+figure.effect-zoe h2,
+figure.effect-zoe p.icon-links a {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, 200%, 0);
+  transform: translate3d(0, 200%, 0); }
+
+figure.effect-zoe p.icon-links a span::before {
+  display: inline-block;
+  padding: 2px 5px;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.shadow {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%; }
+
+.effect-zoe:hover .shadow {
+  opacity: 0.2; }
+
+.icon-eye::before {
+  content: "✿"; }
+
+.icon-paper-clip::before {
+  content: ""; }
+
+.icon-heart::before {
+  content: ""; }
+
+figure.effect-zoe h2 {
+  display: inline-block; }
+
+figure.effect-zoe:hover p.description {
+  opacity: 1; }
+
+figure.effect-zoe:hover figcaption,
+figure.effect-zoe:hover h2,
+figure.effect-zoe:hover p.icon-links a {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+figure.effect-zoe:hover h2 {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s; }
+
+figure.effect-zoe:hover p.icon-links a:nth-child(3) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s; }
+
+figure.effect-zoe:hover p.icon-links a:nth-child(2) {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s; }
+
+figure.effect-zoe:hover p.icon-links a:first-child {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s; }
+
+@media screen and (max-width: 600px) {
+  .name,
+  .name2 {
+    text-align: inherit; } }
+
+/*# sourceMappingURL=spisok_coffee.css.map */

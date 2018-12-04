@@ -1,0 +1,230 @@
+$width-site: 1600px
+$width-container: 1200px
+$font-size: 14px
+
+.content
+  margin-top: 20px
+  padding-bottom: 50px
+
+.content h2
+  font-family: 'Jura', sans-serif
+  font-size: $font-size*2.2
+  letter-spacing: 2px
+  text-align: center
+  margin-bottom: 50px
+  margin-top: 50px
+
+.about
+  width: 480px
+  margin: 0 auto 70px
+  font-family: 'Roboto Mono', monospace
+  color: #626262
+  text-align: center
+
+.image-box
+  width: $width-container
+  display: flex
+  justify-content: space-between
+  margin-bottom: 70px
+
+.column
+  width: 380px
+
+.photo
+  margin-bottom: 50px
+  border: 1px solid lightgrey
+  width: 380px
+
+.text-box
+  box-sizing: border-box
+  padding: 5px 10px 20px 10px
+  font-family: 'Jura', sans-serif
+  background-color: white
+
+
+.image-box .size1
+  width: 380px
+  height: 360px
+
+.image-box .size2
+  width: 380px
+  height: 260px
+
+.image-box .size3
+  width: 380px
+  height: 460px
+
+
+.more
+  text-align: center
+  font-family: 'Roboto Mono', monospace
+  letter-spacing: 2px
+
+.more a
+  text-decoration: none
+  color: #626262
+  font-weight: 700
+
+
+
+.grid
+  position: relative
+  clear: both
+  margin: 0 auto 50px
+  max-width: 1000px
+  list-style: none
+  text-align: center
+  border: 1px solid lightgrey
+  box-shadow: #9e9c93 2px 2px 2px 2px
+
+
+/* Common style */
+.grid figure
+  position: relative
+  //float: left
+  overflow: hidden
+  min-width: 380px
+  max-width: 480px
+  max-height: 360px
+  width: 48%
+  height: auto
+  text-align: center
+  cursor: pointer
+
+.grid figure img
+  position: relative
+  display: block
+  min-height: 100%
+  max-width: 100%
+  opacity: 0.8
+
+
+.grid figure figcaption
+  padding: 2em
+  color: #fff
+  text-transform: uppercase
+  font-size: 1.25em
+  -webkit-backface-visibility: hidden
+  backface-visibility: hidden
+
+
+.grid figure figcaption::before,
+.grid figure figcaption::after
+  pointer-events: none
+
+
+.grid figure figcaption,
+.grid figure figcaption > a
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a
+  z-index: 1000
+  text-indent: 200%
+  white-space: nowrap
+  font-size: 0
+  opacity: 0
+
+
+.grid h2
+  font-weight: 300
+
+
+.grid h2 span
+  font-weight: 800
+
+
+.grid h2,
+.grid figure p
+  margin: 0
+
+
+.grid figure p
+  letter-spacing: 1px
+  font-size: 68.5%
+
+figure.effect-julia
+  background: #2f3238
+
+
+figure.effect-julia img
+  max-width: 400px
+  height: 360px
+  -webkit-transition: opacity 1s, -webkit-transform 1s
+  transition: opacity 1s, transform 1s
+  -webkit-backface-visibility: hidden
+  backface-visibility: hidden
+
+
+figure.effect-julia figcaption
+  text-align: left
+
+
+.text-box
+  text-align: left
+  h2
+    position: relative
+    padding: 0.5em 0
+    text-align: left
+
+
+figure.effect-julia p
+  display: inline-block
+  margin: 0 0 0.55em
+  padding: 0.4em 0.7em
+  background: rgba(255,255,255,0.9)
+  color: #2f3238
+  text-transform: none
+  font-family: "Roboto Mono", monospace
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s
+  transition: opacity 0.35s, transform 0.35s
+  -webkit-transform: translate3d(-360px,0,0)
+  transform: translate3d(-360px,0,0)
+
+
+figure.effect-julia p:first-child
+  -webkit-transition-delay: 0.15s
+  transition-delay: 0.15s
+
+
+figure.effect-julia p:nth-of-type(2)
+  -webkit-transition-delay: 0.1s
+  transition-delay: 0.1s
+
+
+figure.effect-julia p:nth-of-type(3)
+  -webkit-transition-delay: 0.05s
+  transition-delay: 0.05s
+
+
+figure.effect-julia:hover p:first-child
+  -webkit-transition-delay: 0s
+  transition-delay: 0s
+
+
+figure.effect-julia:hover p:nth-of-type(2)
+  -webkit-transition-delay: 0.05s
+  transition-delay: 0.05s
+
+
+figure.effect-julia:hover p:nth-of-type(3)
+  -webkit-transition-delay: 0.1s
+  transition-delay: 0.1s
+
+
+figure.effect-julia:hover img
+  opacity: 0.4
+  -webkit-transform: scale3d(1.1,1.1,1)
+  transform: scale3d(1.1,1.1,1)
+
+
+figure.effect-julia:hover p
+  opacity: 1
+  -webkit-transform: translate3d(0,0,0)
+  transform: translate3d(0,0,0)

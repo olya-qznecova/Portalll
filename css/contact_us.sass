@@ -1,0 +1,85 @@
+$width-site: 100%
+$width-container: 1200px
+$font-size: 14px
+$text-color: #626262
+$choco-color: #3d3029
+@import url('https://fonts.googleapis.com/css?family=Jura')
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono')
+
+img
+  width: $width-container
+  max-height: 400px
+  margin: 0 auto
+  margin-bottom: 50px
+
+
+.title
+  text-align: left
+  margin-bottom: 20px
+  margin-top: 20px
+
+.title h2
+  margin-bottom: 10px
+  font-size: 30px
+  font-family: "Jura", sans-serif
+
+
+.title p
+  font-family: "Jura", sans-serif
+  color: #626262
+
+
+.mail
+  border-bottom: 1px solid #626262
+  padding-bottom: 2px
+
+.letter
+  margin-left: 0
+  margin-top: 50px
+  display: flex
+  flex-direction: column
+  width: $width-container/2
+
+.letter input
+  max-width: 500px
+  height: 30px
+  margin-bottom: 15px
+  font-size: $font-size
+  border-bottom: black 1px solid
+
+.letter textarea
+  width: $width-container/2
+  resize: none
+  border-radius: 30px
+  box-sizing: border-box
+  padding: 20px 30px
+
+.letter textarea:focus
+  outline: none
+
+
+.letter button
+  width: 120px
+  height: 30px
+  margin-top: 15px
+  cursor: pointer
+  margin-right: 20px
+  background-color: black
+  color: white
+  font-family: "Jura", sans-serif
+  border: none
+  font-weight: bold
+  letter-spacing: 1px
+  transition: 0.5s
+
+.letter button:hover
+  background-color: white
+  color: black
+  border: 2px solid $choco-color
+
+.fas
+  margin-left: 5px
+
+.buttons
+  display: flex
+  justify-content: flex-end
